@@ -158,6 +158,10 @@ header section {
   width: 100%;
   height: 100%;
   filter: invert(1);
+  transition: all 0.5s;
+}
+.iconosRedes:hover {
+  transform: scale(1.1);
 }
 
 #contacto {

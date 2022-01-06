@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Satisfy", cursive;
+  scroll-behavior: smooth;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #020024 0%, #ff00f9 0%, #00e8ff 100%);
+}
+
+#botonMenu {
+  display: none;
+}
+
+nav {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(15px);
+  background-color: rgba(158, 255, 255, 0.15);
+}
+nav label img {
+  width: 40px;
+  height: 40px;
+  margin: 5px 10px;
+}
+nav ul {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+nav ul li {
+  width: 25%;
+  height: 100%;
+}
+nav ul li:hover {
+  background-color: rgba(158, 255, 255, 0.25);
+}
+nav ul li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+}
+nav ul li a span {
+  font-size: 20px;
+  font-weight: bolder;
+  color: black;
+}
+
+.fotoLogo {
+  width: 400px;
+  transition: all 0.5s;
+}
+.fotoLogo:hover {
+  transform: scale(1.5);
+}
+
+header {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: table;
+  margin: 0;
+  top: 0;
+  position: relative;
+}
+header section {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.headerContenedorLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#productos {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: table;
+  margin: 0;
+  top: 0;
+  position: relative;
+}
+#productos div {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.contenedorProductos {
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px 0;
+}
+.contenedorProductos h2 {
+  width: 100%;
+  text-align: center;
+}
+
+.productoImagen {
+  width: 90%;
+  height: calc(100% - 30px);
+  margin: 0 auto;
+}
+
+.productos {
+  width: 100%;
+  display: flex !important;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+.producto {
+  width: 350px;
+  height: 350px;
+  border-radius: 1000px;
+  padding: 3%;
+  background-color: rgba(255, 255, 255, 0.75);
+  transition: all 0.5s;
+}
+.producto:hover {
+  transform: scale(1.1);
+}
+.producto h3 {
+  height: 30px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.iconosRedes {
+  width: 100%;
+  height: 100%;
+  filter: invert(1);
+}
+
+#contacto {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: table;
+  margin: 0;
+  top: 0;
+  position: relative;
+}
+#contacto section {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.contenedorContacto {
+  padding: 20px 0;
+  background-color: black;
+}
+.contenedorContacto h2 {
+  text-align: center;
+  color: white;
+}
+
+.contenedorIconosRedes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+.contenedorIconosRedes a {
+  width: 120px;
+  height: 120px;
+}
+
+@media only screen and (max-width: 599px) {
+  .fotoLogo {
+    width: 300px;
+    transition: all 0.5s;
+  }
+  .fotoLogo:hover {
+    transform: scale(1.5);
+  }
+
+  nav label {
+    display: block;
+    width: 100%;
+    height: 50px;
+  }
+
+  nav {
+    display: block;
+  }
+  nav ul {
+    display: block;
+    position: absolute;
+    top: -200px;
+  }
+  nav ul li {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(158, 255, 255, 0.5);
+    opacity: 0;
+    transition: all ease-in-out 0.25s;
+  }
+  nav ul li:hover {
+    background-color: rgba(158, 255, 255, 0.75);
+  }
+  nav ul li a span {
+    font-size: 15px;
+  }
+
+  #botonMenu:checked ~ ul {
+    top: 50px;
+  }
+
+  #botonMenu:checked ~ ul li {
+    opacity: 1;
+  }
+
+  h4 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: black;
+  }
+
+  .conocimietoImagen {
+    width: 60px;
+    height: 60px;
+  }
+
+  .producto {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 1199px) {
+  .producto {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  nav label {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,36 @@
+.iconosRedes {
+  width: 100%;
+  height: 100%;
+  filter: invert(1);
+}
+#contacto {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: table;
+  margin: 0;
+  top: 0;
+  position: relative;
+  section {
+    vertical-align: middle;
+    display: table-cell;
+  }
+}
+.contenedorContacto {
+  padding: 20px 0;
+  background-color: black;
+  h2 {
+    text-align: center;
+    color: white;
+  }
+}
+.contenedorIconosRedes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  a {
+    width: 120px;
+    height: 120px;
+  }
+}
